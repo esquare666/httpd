@@ -1,0 +1,5 @@
+---
+- name: Installing httpd using roles
+  hosts: webservers
+  roles:
+    - centos.httpd
