@@ -1,0 +1,8 @@
+---
+httpd_install_from:
+    - { name: "httpd" }
+    - { name: "httpd-devel" }
+    - { name: "mod_ssl" }
+    - { name: "httpd-tools" }
+
+var_log_httpd_permission: "0755"

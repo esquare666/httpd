@@ -1,5 +1,13 @@
 ---
 - name: Installing httpd using roles
   hosts: webservers
-  roles:
-    - centos.httpd
+  tasks:
+  - name: 1st Task
+    debug:
+      msg: "Before Call Role"
+  - name: Importing the role
+    import_role:
+      name: install-httpd
+  - name: After complete the Role
+    debug:
+      msg: "After Complete the install-httpd role"
